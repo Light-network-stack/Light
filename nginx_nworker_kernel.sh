@@ -69,12 +69,12 @@ echo "Start Nginx ... ..."
 # Stop Nginx
 # sudo systemctl stop nginx
 
-# 查找Nginx配置文件�?find / -name nginx.conf
-# 查看Nginx进程号：#pgrep nginx
-# 	或�?#ps -ef | grep nginx
-# 杀死进程：#kill -9 <进程�?
-# 杀死Nginx进程（仅需一步）�?pkill -9 nginx
-# 杀死Nginx进程�?pgrep nginx | xargs kill -9
+# 查找Nginx配置文件: #find / -name nginx.conf
+# 查看Nginx进程号: #pgrep nginx
+# 	或 #ps -ef | grep nginx
+# 杀死进程：#kill -9 <PID>
+# 杀死Nginx进程（仅需一步）: #pkill -9 nginx
+# 杀死Nginx进程: #pgrep nginx | xargs kill -9
 
 # monitor the speed of every NIC:
 # sudo apt-get install bwm-ng
@@ -83,6 +83,6 @@ echo "Start Nginx ... ..."
 # 查看并发连接数：
 # netstat -na|grep ESTABLISHED|wc -l
 
-# 解除fd数目限制(should be set on both the client and server side)�?
+# 解除fd数目限制(should be set on both the client and server side):
 # ulimit -n 102400 
 
